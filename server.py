@@ -7,7 +7,7 @@
 
 # Regiones de ngrok
 # Código          Lugar
-#-----------      ---------------------------
+# us              Estados Unidos (Ohio)
 # ap	          Asia / Pacífico (Singapore)
 # au		      Australia (Sydney)
 # eu		      Europa (Frankfurt)
@@ -51,7 +51,7 @@ def download_latest_release(download_path='.'):
 		else:
 			os.system("rm *.msp")
 			print("Actualizando tu versión de MSP...")
-			time.sleep(1.5)
+			time.sleep(1)
 		pathto = os.path.join(download_path, version)
 		with open(pathto, 'wb') as archivo:
 			archivo.write(requests.get(url).content)
